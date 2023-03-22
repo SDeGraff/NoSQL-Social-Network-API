@@ -1,5 +1,5 @@
 {
-  "name": "NoSQL-Social-Network-API",
+  "name": "nosql-social-network-api",
   "version": "1.0.1",
   "description": "Web App with Express, and MongoDB",
   "main": "server.js",
