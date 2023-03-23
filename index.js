@@ -1,3 +1,4 @@
+
 const express = require('express');
 const db = require('./config/connection');
 const routes = require('./routes');
@@ -5,11 +6,11 @@ const routes = require('./routes');
 const mongoose = require('mongoose');
 mongoose.set('debug', true);
 
-const PORT = process.env.PORT || 3001;
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 db.once('open', () => {

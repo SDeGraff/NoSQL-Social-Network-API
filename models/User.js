@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const assignmentSchema = require('./thought');
+const Thought = require('./Thought');
 
 // Schema to create Student model
 const userSchema = new Schema(
@@ -40,7 +40,7 @@ userSchema.virtual('friendcount').get(function () {
 })
 
 userSchema.pre('remove', function() {
-  thought.deletemany({_id: req.params.thoughtId})
+  Thought.deletemany({_id: req.params.thoughtId})
   .then(() => user.updateMany({}, {$pull: {friends: req.params.userId}}))
   .then(() => user.updateMany({}, {$pull: {thoughts: req.params.thoughtId}}))
   .then(() => res.json({ message: 'user deleted!' }))
