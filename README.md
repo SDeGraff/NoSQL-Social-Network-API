@@ -3,9 +3,9 @@
 This is an API for a social networking application that allows users to create and manage their profiles, connect with friends, and share updates and media. The API is built using Express.js for routing, a MongoDB database, and the Mongoose ODM, and it provides a RESTful interface for interacting with the application's resources.
 
 # Table of Contents
-* [Getting Started](#Getting Started)
+* [Getting Started](#Getting-Started)
 * [Installing](#Installing)
-* [Running the API](#Running the API)
+* [Running the API](#Running-the-API)
 
 # Getting Started
 Prerequisites
