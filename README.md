@@ -6,7 +6,6 @@ This is an API for a social networking application that allows users to create a
 
 - [Getting Started](#Getting-Started)
 - [Installing](#Installing)
-- [Running the API](#Running-the-API)
 - [Demo](#Demo)
 
 # Getting Started
